@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // Original string
+      var str = " My Name is Surya";
+      document.writeln("Original string: '" + str + "'<br>");
+
+      var trimmed = str.trim();
+      document.writeln("Trimmed: '" + trimmed + "'<br>");
+
+      var upper = trimmed.toUpperCase();
+      document.writeln("Uppercase: " + upper + "<br>");
+
+      var lower = trimmed.toLowerCase();
+      document.writeln("Lowercase: " + lower + "<br>");
+
+      var hasWord = trimmed.includes("Surya");
+      document.writeln("Includes 'Surya': " + hasWord + "<br>");
+
+      var index = trimmed.indexOf("is");
+      document.writeln("Index of 'is': " + index + "<br>");
+
+      var sliced = trimmed.slice(0, 10);
+      document.writeln("Sliced (0 to 10): " + sliced + "<br>");
+
+      var replaced = trimmed.replace("Surya", "Surya Markandeyulu");
+      document.writeln("Replaced string: " + replaced + "<br>");
+
+      var words = trimmed.split(" ");
+      document.writeln("Split into words: " + words + "<br>");
+
+      document.writeln("Character at index 5: " + trimmed.charAt(5) + "<br>");
+
+      var substr = trimmed.substring(4, 14);
+      document.writeln("Substring (4 to 14): " + substr + "<br>");
+    </script>
+  </body>
+</html>

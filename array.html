@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <script>
+      var arr = ["AngularJS", "Node.js", "JQuery"];
+      document.writeln("Original array:" + arr + "<br>");
+      document.writeln("Extracted element:" + arr.pop() + "<br>");
+      document.writeln("Remaining Elements:" + arr);
+      document.writeln("<br>");
+      //push
+      var arr = ["AngularJS", "Node.js"];
+      arr.push("JQuery");
+      document.writeln(arr);
+      document.writeln("<br>");
+      //reverse
+      var arr = ["AngularJS", "Node.js", "JQuery"];
+      var rev = arr.reverse();
+      document.writeln(rev);
+      document.writeln("<br>");
+      //some
+      var arr = [12, 79, 23, 34];
+      function test(arr) {
+        return arr > 80;
+      }
+      var res = arr.some(test);
+      document.writeln("Its" + res);
+      document.writeln("<br>");
+      //shift
+      var arr = ["AngularJS", "Node.js", "JQuery"];
+      var result = arr.shift();
+      document.writeln(arr);
+      document.writeln("<br>");
+      //slice
+      var arr = ["AngularJS", "Node.js", "JQuery", "Bootstrap"];
+      var result = arr.slice(1, 2);
+      document.writeln(result);
+      document.writeln("<br>");
+      //sort
+      var arr = [12, 79, 23, 34];
+      var result = arr.sort();
+      document.writeln(result);
+    </script>
+  </body>
+</html>
